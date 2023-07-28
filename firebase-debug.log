@@ -1,0 +1,75 @@
+[debug] [2022-12-20T20:37:14.497Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T20:37:14.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TONY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-20T20:37:14.500Z] CLI Version:   11.16.1
+[debug] [2022-12-20T20:37:14.500Z] Platform:      win32
+[debug] [2022-12-20T20:37:14.500Z] Node Version:  v16.4.0
+[debug] [2022-12-20T20:37:14.501Z] Time:          Tue Dec 20 2022 11:37:14 GMT-0900 (GMT-09:00)
+[debug] [2022-12-20T20:37:14.501Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T20:37:14.505Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-20T20:37:14.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T20:37:14.630Z] > authorizing via signed-in user (anthonynkwa92@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\TONY\Desktop\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-12-20T20:37:14.700Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-20T20:37:57.983Z] Using project from CLI flag: fir-687cd
+[debug] [2022-12-20T20:37:57.984Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-687cd [none]
+[debug] [2022-12-20T20:37:58.647Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-687cd 200
+[debug] [2022-12-20T20:37:58.647Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-687cd {"projectId":"fir-687cd","projectNumber":"387177004218","displayName":"Amazon","name":"projects/fir-687cd","resources":{"hostingSite":"fir-687cd"},"state":"ACTIVE","etag":"1_04365b9a-ed57-4051-b7ea-39a451e5f21a"}
+[info] i  Using project fir-687cd (Amazon) 
+[info] 
+=== Functions Setup
+[debug] [2022-12-20T20:37:58.695Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T20:37:58.696Z] > authorizing via signed-in user (anthonynkwa92@gmail.com)
+[debug] [2022-12-20T20:37:58.696Z] [iam] checking project fir-687cd for permissions ["firebase.projects.get"]
+[debug] [2022-12-20T20:37:58.696Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-687cd:testIamPermissions [none]
+[debug] [2022-12-20T20:37:58.696Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-687cd:testIamPermissions x-goog-quota-user=projects/fir-687cd
+[debug] [2022-12-20T20:37:58.696Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-687cd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T20:37:59.845Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-687cd:testIamPermissions 200
+[debug] [2022-12-20T20:37:59.845Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-687cd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T20:37:59.846Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-12-20T20:37:59.846Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/fir-687cd
+[debug] [2022-12-20T20:37:59.847Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-12-20T20:37:59.847Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/fir-687cd
+[debug] [2022-12-20T20:38:01.776Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/runtimeconfig.googleapis.com 200
+[debug] [2022-12-20T20:38:01.776Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-12-20T20:38:01.777Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/cloudfunctions.googleapis.com 200
+[debug] [2022-12-20T20:38:01.777Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-687cd/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
